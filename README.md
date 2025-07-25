@@ -1,1 +1,3 @@
-# sort-algorithms-JAVA
+# Sort Algorithms 
+
+## 1. Bubble Sort
