@@ -2,11 +2,7 @@ package golch_7;
 
 public abstract class SortAlgorithm {
 
-    public int[] sort(int[] myArray) {
-        int n = myArray.length;
-
-        return myArray;
-    };
+    public abstract int[] sort(int[] myArray);
 
     public void sortAndPrint(int[] myArray) {
         printArray(sort(myArray));
