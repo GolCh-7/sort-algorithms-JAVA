@@ -1,13 +1,9 @@
 package golch_7;
 
-public class BubbleSort {
+public class BubbleSort extends SortAlgorithm{
 
-    public int[] myArray;
-    private int n;
-
-    public int[] sort(int[] testArray) {
-        myArray = testArray;
-        n = myArray.length;
+    public int[] sort(int[] myArray) {
+        int n = myArray.length;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < (n-i-1); j++) {
                 if (myArray[j] > myArray[j+1]) {
@@ -19,21 +15,5 @@ public class BubbleSort {
         };
 
         return myArray;
-    }
-
-    public void sortAndPrint(int[] myArray) {
-        printArray(sort(myArray));
-    }
-
-    private void printArray(int[] myArray) {
-        StringBuilder arrayToPrint = new StringBuilder();
-        arrayToPrint.append("[");
-        for (int n : myArray) {
-            arrayToPrint.append(n + ", ");
-        }
-        arrayToPrint.setLength(arrayToPrint.length() - 2);
-        arrayToPrint.append("]");
-
-        System.out.println(arrayToPrint.toString());
     }
 }
